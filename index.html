@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeThread </title>
+            
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <input type="checkbox" id="dark-mode-toggle" class="theme-pointer" style="display: none;">
+
+    <div class="page-wrapper">
+
+        <nav class="navbar no-print">
+            <div class="nav-container">
+                <h1 class="logo">Vibe<span class="logo-color">Thread</span></h1>
+                <div class="nav-buttons">
+                    
+                    <label for="dark-mode-toggle" id="theme-toggle" class="theme-btn">
+                        <span class="moon-icon">🌙</span>
+                        <span class="sun-icon" style="display: none;">☀️</span>
+                    </label>
+                    
+                    <button class="cart-btn">
+                         Cart <span class="badge">3</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    
+
+    <div class="main-container">
+        
+        <aside class="sidebar no-print">
+            <h3>Filter Products</h3>
+            
+            <div class="filter-box">
+                <label>Sort By</label>
+                <select class="form-control">
+                    <option>Featured Items</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Categories</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" checked> Outerwear</label>
+                    <label><input type="checkbox"> Essentials</label>
+                    <label><input type="checkbox"> Accessories</label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="products-area">
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=500&q=80" alt="Leather Jacket">
+                    <div class="card-info">
+                        <h4>Classic Leather Jacket</h4>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+                        <div class="price-row">
+                            <span class="price">$189.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80" alt="Cotton Tee">
+                    <div class="card-info">
+                        <h4>Premium Cotton Tee</h4>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.2)</p>
+                        <div class="price-row">
+                            <span class="price">$35.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80" alt="Bomber Jacket">
+                    <div class="card-info">
+                        <h4>Urban Bomber Jacket</h4>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.7)</p>
+                        <div class="price-row">
+                            <span class="price">$120.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Sneakers">
+                    <div class="card-info">
+                        <h4>Sport Performance Sneakers</h4>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+                        <div class="price-row">
+                            <span class="price">$95.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=500&q=80" alt="Crewneck Sweater">
+                    <div class="card-info">
+                        <h4>Vintage Crewneck Knit</h4>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.4)</p>
+                        <div class="price-row">
+                            <span class="price">$68.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80" alt="Black Tee">
+                    <div class="card-info">
+                        <h4>Core Black Fitted Tee</h4>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.6)</p>
+                        <div class="price-row">
+                            <span class="price">$28.00</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <aside class="cart-sidebar no-print">
+        <div class="cart-title-row">
+            <h2>Your Cart</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="cart-items-list">
+            <div class="single-cart-item">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=80&h=80" alt="Thumb">
+                <div>
+                    <p class="cart-item-name">Classic Leather Jacket</p>
+                    <p class="cart-item-price">1 x $189.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total-box">
+            <p><strong>Total: $189.00</strong></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <footer class="footer no-print">
+        <p>&copy; 2026 VibeThread Showcase Platform.</p>
+    </footer>
+    </div>
+</body>
+</html>
